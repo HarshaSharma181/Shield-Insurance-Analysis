@@ -85,7 +85,7 @@ The project consists of the following data tables:
 
 - **Total Revenue:** ₹989M
 - **Total Customers:** 26.8K
-- **Daily Average Revenue (DRG):** ₹5.47M
+- **Daily Revenue Growth (DRG):** ₹5.47M
 - **Daily Customer Growth (DCG):** 148.29
 
 ### City-Level Insights
