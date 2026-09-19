@@ -36,38 +36,37 @@ The project consists of the following data tables:
 
 ### Dimension Tables
 
+- **dim_date**
+  - date
+  - day_type
+  - Month
+  - Month Sort
+
 - **dim_customer**
-  - Customer Code
   - Age
   - Age Group
   - City
-  - Date of Birth
+  - customer_code
+  - dob
 
 - **dim_policies**
-  - Policy ID
-  - Base Coverage Amount
-  - Base Premium Amount
-
-- **dim_date**
-  - Date
-  - Month
-  - Month Sort
-  - Day Type
+  - base_coverage_amt(INR)
+  - base_premium_amt(INR)
+  - Policy_Id
 
 ### Fact Tables
 
 - **fact_premiums**
-  - Customer Code
-  - Date
-  - Policy ID
-  - Sales Mode
-  - Final Premium Amount
+  - customer_code
+  - date
+  - final_premium_amt(INR)
+  - policy_id
+  - sales_mode
 
 - **fact_settlements**
-  - Age
-  - Settlement %
-  - Settlement-related values
-
+  - age
+  - Column1
+  - settlement %
 ---
 
 ## Key Terms
@@ -189,31 +188,43 @@ The Power BI solution contains three major analytical views:
    - Revenue by age group and sales mode
    - Customer trends by age group
 
+### Live Power BI Dashboard
+
+[**View the Interactive Power BI Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiMjNjNzMzZDgtNzc5OS00YmQyLTkwMTUtYjNiMDQxZDU4ZDQ0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
 ---
 
 ## Dashboard Screenshots
 
 ### Home Page
 
-![Home Page](Images/Home%20Page.png)
+![Home Page](Images/Home%20Page.jpg)
+
+The Home Page provides a high-level overview of the Shield Insurance analysis. It highlights the main KPIs and provides navigation to the different analytical sections of the dashboard.
 
 ---
 
 ### General View
 
-![General View](Images/General%20View.png)
+![General View](Images/General%20View.jpg)
+
+The General View presents overall revenue and customer performance through monthly trends, city-level analysis, and customer segmentation. It helps identify major growth patterns and variations across locations and time periods.
 
 ---
 
 ### Sales Mode Analysis
 
-![Sales Mode Analysis](Images/Sales%20View.png)
+![Sales Mode Analysis](Images/Sales%20Mode%20Analysis.jpg)
+
+The Sales Mode Analysis compares customer and revenue contribution across Offline Agent, Offline Direct, Online App, and Online Website channels. It also tracks monthly performance to understand how sales channels contribute to overall business results.
 
 ---
 
 ### Age Group Analysis
 
-![Age Group Analysis](Images/Age%20Group%20Analysis.png)
+![Age Group Analysis](Images/Age%20Group%20Analysis.jpg)
+
+The Age Group Analysis examines revenue, customer distribution, policy preferences, and expected settlement percentages across age segments. It helps identify high-value customer groups and understand how policy preferences vary by age.
 
 ---
 
@@ -226,20 +237,3 @@ The Power BI solution contains three major analytical views:
 - **Data Visualization**
 - **Excel**
 - **SQL**
-
----
-
-## Project Structure
-
-```text
-Shield_Insurance_Analysis/
-│
-├── Images/
-│   ├── Home Page.png
-│   ├── General View.png
-│   ├── Sales View.png
-│   └── Age Group Analysis.png
-│
-├── Shield Insurance Analysis.pbix
-│
-└── README.md
