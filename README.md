@@ -88,8 +88,9 @@ The project consists of the following data tables:
 - **Daily Revenue Growth (DRG):** ₹5.47M
 - **Daily Customer Growth (DCG):** 148.29
 
-### City-Level Insights
+### General View Insights
 
+- **Overall:** ₹989M revenue generated from 26.8K customers
 - **Delhi NCR:** Highest revenue ₹402M | Highest customers 11,007
 - **Indore:** Lowest revenue ₹81M | Lowest customers 2,096
 - **Mumbai:** Second-highest revenue ₹240M | 6,432 customers
@@ -236,4 +237,3 @@ The Age Group Analysis examines revenue, customer distribution, policy preferenc
 - **Data Modeling**
 - **Data Visualization**
 - **Excel**
-- **SQL**
